@@ -26,8 +26,9 @@
             header("Location:show.php?id=".$ID_Personal);
         }
 
-        public function search($id){
-            return ($this->model->show($id) != false) ? $this->model->show($id) : header("Location:index.php");
+        public function salario($salaraio_bruto,$horas_trabajo,$ID_Personal){
+            return ($this->model->index($salaraio_bruto,$horas_trabajo,$ID_Personal) != false) ? $this->model->index($salaraio_bruto,$horas_trabajo,$ID_Personal) : header("Location:Buscar.php");
+
         }
         
     }

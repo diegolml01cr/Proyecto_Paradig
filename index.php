@@ -26,7 +26,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h4 style="color:#2F4F4F;">PROYECTO</h4>
                 <p style="color:#2F4F4F;"> Paradigmas</p>
-                <a href="/view/user/create.php"  class="btn btn-primary"
+                <a href="/view/user/create.php" class="btn btn-primary">
                     <i class="bi bi-person-plus-fill"></i> AGREGAR NUEVO ABOGADO</a>
             </div>
         </div>
@@ -45,7 +45,7 @@
                 <h4 style="color:#2F4F4F;">PROYECTO</h4>
                 <p style="color:#2F4F4F;"> Paradigmas</p>
                 <a href="/view/user/Buscar.php" class="btn btn-primary">
-                    <i class="bi bi-search"></i> BUSCAR ABOGADO</a>
+                    <i class="bi bi-credit-card-2-front"></i> </i> PLANILLA</a>
             </div>
         </div>
     </div>
