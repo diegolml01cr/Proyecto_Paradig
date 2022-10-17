@@ -2,40 +2,40 @@
     require_once("C:/xampp/htdocs/Proyecto/view/head/head.php");
 ?>
 
-<body>
+<body style="background-color:#8C8C8C;">
 
-    <h2 Class="text-center">INGRESAR NUEVO ABOGADO</h2>
-    <form action="store.php" method="POST" autocomplete="off">
+    <h2 style="color:white" Class="text-center">INGRESAR NUEVO ABOGADO</h2>
+    <form action="store.php" method="POST" autocomplete="off" style="background-color:#8C8C8C;">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Codigo de puesto</label>
+        <strong><label style="color:white"  for="exampleInputEmail1" class="form-label" >CODIGO PUESTO</label></strong>
             <input type="text" name="id_departamento" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">Codigo de departamento</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">CODIGO DEPARTAMENTO</label></strong>
             <input type="text" name="id_puesto" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">codigo de bufete</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">CODIGO BUFETE</label></strong>
             <input type="text" name="id_bufete" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">Nombre del Abogado</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">NOMBRE </label></strong>
             <input type="text" name="Nombre" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">apellidos del Abogado</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">APELLIDOS</label></strong>
             <input type="text" name="Apellidos" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">telefono del Abogado</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">TELEFONO</label></strong>
             <input type="text" name="Telefono" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">email del Abogado</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">EMAIL</label></strong>
             <input type="text" name="Email" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
-            <label for="exampleInputEmail1" class="form-label">direccion del Abogado</label>
+                <strong> <label style="color:white" for="exampleInputEmail1" class="form-label">DIRECCION</label></strong>
             <input type="text" name="Direccion" required class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
 
