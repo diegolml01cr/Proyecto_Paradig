@@ -56,9 +56,7 @@
             $stament->bindParam(":id",$ID_Personal);
             return ($stament->execute()) ? $stament->fetch() : false ;
          }
-         public function CalcularSalario($Salario_Neto, $Reduccion_Salarial){
-           
-         }
+      
     }
 
 ?>
