@@ -16,31 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `salario`
+-- Table structure for table `informe`
 --
 
-DROP TABLE IF EXISTS `salario`;
+DROP TABLE IF EXISTS `informe`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `salario` (
-  `ID_Salario` int NOT NULL AUTO_INCREMENT,
-  `id_puesto` int NOT NULL,
-  `Horas_trabajo` int DEFAULT NULL,
-  `Salario_Neto` int DEFAULT NULL,
-  PRIMARY KEY (`ID_Salario`),
-  KEY `id_puesto` (`id_puesto`),
-  CONSTRAINT `salario_ibfk_1` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`ID_Puesto`)
-) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `informe` (
+  `ID_informe` int NOT NULL AUTO_INCREMENT,
+  `id_empleado` int DEFAULT NULL,
+  `horas_extra` int DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  PRIMARY KEY (`ID_informe`),
+  KEY `id_empleado` (`id_empleado`),
+  CONSTRAINT `informe_ibfk_1` FOREIGN KEY (`id_empleado`) REFERENCES `personal` (`ID_Personal`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `salario`
+-- Dumping data for table `informe`
 --
 
-LOCK TABLES `salario` WRITE;
-/*!40000 ALTER TABLE `salario` DISABLE KEYS */;
-INSERT INTO `salario` VALUES (99,342,8,NULL);
-/*!40000 ALTER TABLE `salario` ENABLE KEYS */;
+LOCK TABLES `informe` WRITE;
+/*!40000 ALTER TABLE `informe` DISABLE KEYS */;
+/*!40000 ALTER TABLE `informe` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-16 16:54:39
+-- Dump completed on 2022-10-17 22:04:05

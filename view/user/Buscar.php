@@ -1,7 +1,9 @@
 <?php
     require_once("C:/xampp/htdocs/Proyecto/view/head/head.php");
     require_once("C:/xampp/htdocs/Proyecto/controller/userController.php");
+   
     $obj =new userController();
+    
     $rows= $obj->search();
 ?>
 
@@ -11,12 +13,10 @@
         <thead class = "table-dark">
             <tr>
             
-                <th scope = "col">NOMBRE</th>
-                <th scope = "col">APELLIDOS</th>
-                <th scope = "col">TELEFONO</th>
-                <th scope = "col">EMAIL</th>
-                <th scope = "col">DIRECCION</th>
-                <th scope = "col"> </th>
+                <th scope = "col">ID</th>
+                <th scope = "col">SALARIO BRUTO</th>
+                <th scope = "col">HORAS DE TRABAJO</th>
+                
             </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -26,9 +26,6 @@
                    
                     <th><?= $row[4] ?></th>
                     <th><?= $row[5] ?></th>
-                    <th><?= $row[6] ?></th>
-                    <th><?= $row[7] ?></th>
-                    <th><?= $row[8] ?></th>
                     <th>
                         <a href="show.php?id=<?= $row[0] ?>" class="btn btn-primary"><i class="bi bi-three-dots-vertical">  Ver</i></a>
                         <a href="edit.php?id=<?= $row[0] ?>" class="btn btn-success">Modificar</a>

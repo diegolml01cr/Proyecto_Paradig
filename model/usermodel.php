@@ -57,15 +57,15 @@
             return ($stament->execute()) ? $stament->fetch() : false ;
         }
         
-        public function salario($salaraio_bruto,$horas_trabajo,$ID_Personal){
+        public function salario($Salario_Bruto,$horas_trabajo,$ID_Personal){
             $stament = $this ->PDO->prepare("SELECT Salario_Bruto, Horas_trabajo, ID_Personal FROM puesto, salario, personal 
             WHERE ID_Personal =:ID_Personal");
             $stament->bindParam(":ID_Personal",$ID_Personal);
-            $stament->bindParam(":Salario_Bruto",$id_bufete);
+            $stament->bindParam(":Salario_Bruto",$Salario_Bruto);
             $stament->bindParam(":Horas_trabajo",$id_bufete);
             return ($stament->execute()) ? $stament->fetch() : false ;
-        }
-      
+         }
+         
     }
 
 ?>

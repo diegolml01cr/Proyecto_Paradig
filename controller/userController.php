@@ -25,10 +25,12 @@
             return ($this->model->delete($ID_Personal)) ? header("Location:index.php") : 
             header("Location:show.php?id=".$ID_Personal);
         }
-
-        public function salario($salaraio_bruto,$horas_trabajo,$ID_Personal){
-            return ($this->model->index($salaraio_bruto,$horas_trabajo,$ID_Personal) != false) ? $this->model->index($salaraio_bruto,$horas_trabajo,$ID_Personal) : header("Location:Buscar.php");
-
+        public function search($id){
+            return ($this->model->show($id) != false) ? $this->model->show($id) : header("Location:Buscar.php");
+        }
+       
+        public function salario($Salario_Bruto,$horas_extras,$fecha){
+            return($this->model->salario($Salario_Bruto,$horas_extras,$fecha) ?$this->model->salario($Salario_Bruto,$horas_extras,$fecha):header("Location:salario.php"));
         }
         
     }
