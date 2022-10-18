@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <head>
-    <Title>Buscar empleado</title>
+    <Title>BUSCAR EMPLEADO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -15,13 +15,13 @@
 <body>
 
 <div class="container">
-    <h2>Busqueda de registros</h2>
+    <h2>BUSQUEDA DE REGISTRO</h2>
     <form role="form" method="POST">
         <div class="form-group">
-            <label for="email">Identificación:</label>
+            <label for="email">IDENTIFICACION</label>
             <input type="text" class="form-control" name="buscar" placeholder="IDENTIFICACIÓN" required>
         </div>
-        <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
+        <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i> BUSCAR</button>
     </form>
 
     <?php 

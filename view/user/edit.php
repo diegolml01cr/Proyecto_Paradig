@@ -62,7 +62,7 @@
     </div>
     <div>
         <input type="submit" class="btn btn-success" value="Actualizar">
-        <a class="btn btn-danger" href="show.php?id=<?=$user[0]?>">Cancelar</a>
+        <a class="btn btn-danger" href="index.php">Cancelar</a>
     </div>
 </form>
 

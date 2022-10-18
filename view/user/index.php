@@ -43,7 +43,7 @@
                     <th><?= $row[8] ?></th>
                     <th>
                         <a href="show.php?id=<?= $row[0] ?>" class="btn btn-primary"><i class="bi bi-three-dots-vertical">  Ver</i></a>
-                        <a href="edit.php?id=<?= $row[0] ?>" class="btn btn-success">Modificar</a>
+                        <a href="edit.php?id=<?= $row[0] ?>" class="btn btn-success"><i class="bi bi-pencil-fill">Modificar</i></a>
                         <!-- Button trigger modal -->
                         <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash-fill">ELIMINAR</i></a>
 
