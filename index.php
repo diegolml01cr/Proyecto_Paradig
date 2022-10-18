@@ -44,7 +44,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h4 style="color:#2F4F4F;">PROYECTO</h4>
                 <p style="color:#2F4F4F;"> Paradigmas</p>
-                <a href="/view/user/Buscar.php" class="btn btn-primary">
+                <a href="/view/user/salario.php" class="btn btn-primary">
                     <i class="bi bi-credit-card-2-front"></i> </i> PLANILLA</a>
             </div>
         </div>

@@ -2,48 +2,39 @@
     require_once("C:/xampp/htdocs/Proyecto/view/head/head.php");
     require_once("C:/xampp/htdocs/Proyecto/controller/userController.php");
    
-    $obj =new userController();
-    $rows= $obj->salario();
+    //$obj =new userController();
+    //$rows= $obj->salario([0]);
 ?>
 
 <?php
 
-$alma = 1; $Sbruto = 0; $Sneto = 0; $Salma = 0; $Sextra = 0; $Sbase = 0;
+//$alma = 1; $Sbruto = 0; $Sneto = 0; $Salma = 0; $Sextra = 0; $Sbase = 0;
 
-foreach($rows as $final){
-    $calbase = $final['Salario_Bruto'];
+//foreach($rows as $final){
+   // $calbase = $final['Salario_Bruto'];
 
 
-}
+//}
 
 ?>
+
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">IDENTIFICACION</th>
+      <th scope="col">SALARIO BRUTO</th>
+      <th scope="col">SALARIO NETO</th>
+      <th scope="col">REDUCCION SALARIAL</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>$rows</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+    <td>NULL</td>
+      <td>NULL</td>
+      <td>NULL</td>
+      <td>NULL</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    <a href="/index.php" class="btn btn-primary"><i class="bi bi-arrow-bar-right">REGRESAR</i></a>
   </tbody>
 </table>
 

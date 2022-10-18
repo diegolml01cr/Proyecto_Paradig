@@ -9,19 +9,12 @@
 <head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></head>
 <h2 class = "text-center">LISTA DE ABOGADOS</h2>
 
-<form action = "show.php" method ="get" class="row g-3">
+
+ 
   <div class="col-auto">
-    <label for="staticEmail2" class="visually-hidden">ID</label>
-    <input type="text" readonly class="form-control-plaintext" id="busqueda" name = "ident" value="IDENTIFICACION" class = "buscarabogado">
+  <a href="Buscar.php" class="btn btn-primary"><i class="bi bi-search"></i> BUSCAR</i></a>
   </div>
-  <div class="col-auto">
-    <label for="inputPassword2" class="visually-hidden">IDENTIFICACION</label>
-    <input type="password" class="form-control" id="inputPassword2" placeholder="IDENTIFICACION">
-  </div>
-  <div class="col-auto">
-  <a href="show.php?id=<?= $row[0] ?>" class="btn btn-primary"><i class="bi bi-search"></i> BUSCAR</i></a>
-  </div>
-</form>
+
 
 
 <h1> </h1>
